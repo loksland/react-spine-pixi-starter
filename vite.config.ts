@@ -2,7 +2,6 @@ import path from 'path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
-import svgr from 'vite-plugin-svgr';
 
 let publishSubDirPath = 'react-spine-pixi-starter/';
 if (!publishSubDirPath.endsWith('/')) {
@@ -10,7 +9,7 @@ if (!publishSubDirPath.endsWith('/')) {
 }
 
 export default defineConfig({
-  plugins: [tailwindcss(), svgr(), react()],
+  plugins: [tailwindcss(), react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -18,7 +17,8 @@ export default defineConfig({
   },
   base: `/${publishSubDirPath}`,
   build: {
-    outDir: `./docs/${publishSubDirPath}`,
+    outDir: './docs', // Github pages
+    // outDir: `./dist/${publishSubDirPath}`,
     emptyOutDir: true, // also necessary
   },
 });
