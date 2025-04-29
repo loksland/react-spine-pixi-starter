@@ -1,0 +1,41 @@
+{
+  "name": "react-pixi-spine-starter",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open --host --base=/",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview --open --host",
+    "docs": "typedoc src/anim/index.ts"
+  },
+  "dependencies": {
+    "@esotericsoftware/spine-pixi-v8": "^4.2.79",
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.7",
+    "leva": "^0.10.0",
+    "pixi.js": "^8.9.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/stats": "^0.16.30",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.2",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.9",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1",
+    "vite-plugin-svgr": "^4.3.0"
+  }
+}

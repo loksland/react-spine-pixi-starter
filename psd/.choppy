@@ -1,0 +1,7 @@
+{
+  "relativePath": "anim/",
+  "cropToBounds": false,
+  "ext": "png",
+  "pre": "layers-to-comps",
+  "basePath": "./../public"
+}
